@@ -1,0 +1,12 @@
+{
+  "name": "react-fullpage-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["fullpage.js", "fullpage", "react"],
+  "author": "Zhiyuan Zhang",
+  "license": "ISC"
+}
