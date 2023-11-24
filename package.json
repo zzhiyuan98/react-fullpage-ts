@@ -1,6 +1,6 @@
 {
   "name": "react-fullpage-ts",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "build:esm": "tsc -p ./configs/tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "prepack": "npm run build",
-    "test": "mocha"
+    "test": "mocha",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "fullpage.js",
@@ -34,11 +35,25 @@
       }
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zzhiyuan98/react-fullpage-ts.git"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/chai": "^4.3.11",
     "@types/mocha": "^10.0.6",
+    "@types/node": "^20.9.5",
     "chai": "^4.3.10",
     "mocha": "^10.2.0",
+    "semantic-release": "^22.0.8",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
   }
